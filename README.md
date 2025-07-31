@@ -135,6 +135,16 @@ Edit `form-component.component.html`:
 
 ---
 
+### Model
+
+```
+export interface MomoTip {
+  phoneNumber: string;
+  amount: number;
+}
+
+```
+
 ### ✅ 5. Create the API Service
 
 ```bash
