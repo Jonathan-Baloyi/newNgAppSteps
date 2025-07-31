@@ -68,13 +68,14 @@ In `angular.json`, these files are already mapped under `"fileReplacements"`.
 
 ---
 
+
 ### ✅ 3. Generate a Standalone Component
 
 ```bash
-ng generate component components/FormComponent --standalone
+ng generate component components/MomoTipComponent --standalone
 ```
 
-This will create the component in `src/app/components/form-component`.
+This will create the component in `src/app/components/momo-component`.
 
 ---
 
