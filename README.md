@@ -206,3 +206,91 @@ You now have:
 * ✅ API integration via `HttpClient`
 
 Let me know if you want to extend this with routing or build optimizations.
+
+
+To build Angular applications on your local machine, you need to set up a few core tools and dependencies.
+
+---
+
+## ✅ Required Software to Set Up Angular Development
+
+### 1. **Node.js** (includes npm)
+
+* **Why:** Angular CLI, TypeScript, and package management rely on Node.js.
+* **Install:** [https://nodejs.org/](https://nodejs.org/)
+* **Recommended version:** LTS (e.g., Node 18+)
+
+You can check if Node and npm are installed:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+### 2. **Angular CLI**
+
+* **Why:** CLI tool to create, build, serve, and manage Angular apps.
+* **Install:**
+
+```bash
+npm install -g @angular/cli
+```
+
+Check version:
+
+```bash
+ng version
+```
+
+---
+
+### 3. **A Code Editor (e.g., VS Code)**
+
+* **Why:** For writing and managing Angular code.
+* **Recommended:** [Visual Studio Code](https://code.visualstudio.com/)
+
+Install recommended extensions:
+
+* Angular Language Service
+* ESLint
+* Prettier (optional)
+
+---
+
+### 4. **Git (optional but recommended)**
+
+* **Why:** Version control and working with remote repositories.
+* **Install:** [https://git-scm.com/](https://git-scm.com/)
+
+---
+
+## ⚙️ Optional Tools (Commonly Used)
+
+| Tool                           | Purpose                         |
+| ------------------------------ | ------------------------------- |
+| **Postman**                    | API testing                     |
+| **Chrome/Edge**                | With Angular DevTools extension |
+| **Prettier/ESLint**            | Code formatting and linting     |
+| **Docker**                     | If containerizing Angular apps  |
+| **nvm (Node Version Manager)** | Easily switch Node.js versions  |
+
+---
+
+## ✅ Once Set Up
+
+To create a new Angular app:
+
+```bash
+ng new my-app
+cd my-app
+ng serve
+```
+
+Then open `http://localhost:4200` in your browser.
+
+---
+
+Let me know your OS (Windows, macOS, Linux), and I can give you direct download links or commands if needed.
+
