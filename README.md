@@ -175,17 +175,24 @@ export class ApiService {
 
 ### ✅ 6. Update `main.ts` or Root Component to Include the Form Component
 
-In `src/main.ts`:
+In `src/app.config.ts`:
 
 ```ts
-import { bootstrapApplication } from '@angular/platform-browser';
-import { FormComponent } from './app/components/form-component/form-component.component';
-import { importProvidersFrom } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import {
+  ApplicationConfig,
+  importProvidersFrom,
+  provideZoneChangeDetection,
+} from '@angular/core';
+import { provideRouter } from '@angular/router';
 
-bootstrapApplication(FormComponent, {
-  providers: [importProvidersFrom(HttpClientModule)]
-});
+import { routes } from './app.routes';
+import { provideHttpClient } from '@angular/common/http';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideHttpClient(),
+  ],
+};
 ```
 
 ---
